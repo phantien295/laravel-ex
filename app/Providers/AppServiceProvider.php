@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Validator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //Kiểm tra số điện thoại
+        Validator::extend('phone', function($attribute, $value, $parameters, $validator){
+            $pattern = '/^(09[0-9]{8})|(01[0-9]{9})$/';            
+            return preg_match($pattern, $value);
+        });
     }
 
     /**

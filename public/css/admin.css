@@ -1,0 +1,272 @@
+body{
+	/*background: #ecf0f1;*/
+	background: #fff url(img/background.jpg) no-repeat center top;
+	background-attachment: fixed;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+    background-size: cover;
+}
+/* Đẩy phần nội dung xuống dưới menu ngang */
+.body{
+	margin-top: 60px;
+}
+
+.container{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*padding-right: 10px;*/
+	padding-left: 10px;
+	/*margin-right: 10px;*/
+	background: #ffffff;
+	/*border: 1px solid #333;*/
+	box-shadow: 0 2px 4px 0px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.panel{
+	border-radius: 0px;
+}
+/* Tiêu đề cho các mục */
+.header{
+	height: 50px;
+	line-height: 40px;
+	color: #333;
+	font-size: 24px;
+	border-bottom: 1px solid #333;
+	margin-bottom: 10px;
+	/*margin-left: 10px;*/
+	font-weight: bold;
+}
+
+.well{
+	border-radius: 0px;
+}
+
+#dashboard{
+	/*width: 80%;*/
+	background: #16a085;
+	padding-left: 15px;
+	color: white;
+	font-weight: bold;
+	height: 40px;
+	opacity: 1;
+	line-height: 40px;
+	box-shadow: 0 2px 4px 0px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	/*border-radius: 0px 60px 0px 0px;*/
+	/*border-top: 2px solid black;*/
+}
+
+
+
+/* Chỉnh lại góc của navbar */
+.navbar{
+	border-radius: 0;
+	margin-bottom: 5px;
+	box-shadow: 0 2px 4px 0px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);/**/	
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+/* Các trên navbar */
+.cellnavbar{
+	color: #ffffff;
+}
+
+.cellnavbar:hover{
+	border-left: 1px solid #222;
+	border-right: 1px solid #222;
+	background: black;
+	color: white;
+}
+
+/*********** Menu trái ***********/
+/* Menu responsibility */
+/* For tablet */
+@media screen and (max-width: 768px) {
+	.leftmenu{
+		min-height: 100%;
+		min-width: 100%;
+		background: #a6c539;
+		/*height: 100%;*/
+		padding-left: 0px;
+		margin-left: 0px;
+		margin-top: 0px;
+		box-shadow: 0 2px 4px 4px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);/**/
+		/*transition: margin-left .5s;*/
+	}
+
+	#content{
+		/*margin-left: 10px;*/
+		width: 100%;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.leftmenu{
+		height: 100%;
+		width: 20%;
+		background: #a6c539;
+		/*height: 100%;*/
+		padding-left: 0px;
+		margin-left: 0px;
+		margin-top: 0px;
+		position: fixed;		
+	
+
+		box-shadow: 0 2px 4px 4px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	}
+
+	#content{
+		width: 78%;
+		margin-left: 10px;
+		float: right;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.leftmenu{
+		min-height: 100%;
+		width: 20%;
+		background: #a6c539;
+		/*height: 100%;*/
+		padding-left: 0px;
+		margin-left: 0px;
+		margin-top: 0px;
+		position: fixed;		
+	
+
+		box-shadow: 0 2px 4px 4px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	}
+
+	#content{
+		width: 78%;
+		margin-left: 10px;
+		float: right;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.leftmenu{
+		min-height: 100%;
+		width: 20%;
+		background: #a6c539;
+		padding-left: 0px;
+		margin-left: 0px;
+		margin-top: 0px;
+		position: fixed;		
+	
+
+		box-shadow: 0 2px 4px 4px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+		}
+
+	#content{
+		width: 78%;
+		margin-left: 10px;
+		float: right;
+	}
+}
+
+.leftmenu{
+	opacity: 0.9;
+	border-radius: 0px 40px 0px 0px;
+}
+
+#content{
+	opacity: 0.9;
+	margin-right: 10px;
+}
+
+.leftmenu ul{
+	list-style-type: none;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+.leftmenu li{
+	height: 40px;
+	width: auto;
+	line-height: 40px;
+	padding: 0px;
+	border-bottom: 2px inset #808080;
+}
+
+.leftmenu div li{
+	height: 40px;
+	width: auto;
+	line-height: 40px;
+	padding: 0px;
+	margin-bottom: 2px;
+}
+
+.leftmenu .menu{
+	padding-left: 15px;
+	font-weight: bold;
+	color: #222;
+	display: block;
+	text-decoration: none;
+	border-right: 2px solid #80808;
+	
+	/*border-radius: 0px 40px 0px 0px; /*Chỉnh góc*/*/
+
+	
+}
+
+.leftmenu .menu:hover{
+	color: #ecf0f1;
+	background: #fa7921;/*#ecf0f1;*/
+	opacity: 1;
+	cursor: pointer;
+}
+
+.leftmenu li a{
+	padding-left: 30px;
+	font-weight: bold;
+	color: #222;
+	display: block;
+	background: #ffffff;
+	text-decoration: none;
+}
+
+.leftmenu li a:hover{
+	color: #ecf0f1;
+	background: #222;
+	opacity: 1;
+}
+
+/* Khoảng cách giữa glyphicon và đường dẫn */
+span{
+	margin-right: 5px;
+}
+
+/* Hiển thị lỗi */
+.error{
+	color: red;
+	/*padding-top: 15px;*/
+	margin-top: 7px;
+	/*margin-bottom: 0px;*/
+	vertical-align: middle;
+
+	
+}
+/* Thay đổi kích thước glyphicon */
+.symbol{
+	font-size: 32px;
+}
+.symbol:hover{
+	cursor: pointer;
+}
+/*  */
+.tr{
+
+}
+.tr:hover{
+	cursor: pointer;
+}
+
+.z{
+	z-index: 100;
+}

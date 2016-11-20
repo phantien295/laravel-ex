@@ -1,0 +1,64 @@
+/***** Trang chi tiết sách *****/
+.image{ /*Chứa khung ảnh*/
+	height: 350px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*Canh giữa ảnh*/
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.image img{
+	border: 5px solid #fff;
+	border-radius: 5px;
+}
+
+.detail{ /*Chứa chi tiết sách*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+	/*font-size: 18px;*/
+}
+
+.book-name{
+	font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+	.image{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	
+}
+
+.comment{ /*Comment sách*/
+	color: #fff;
+	z-index: 0;
+}
+/*Trang đăng ký*/
+.register{
+	/*background: #333;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	border: 2px solid #222;
+	border-radius: 10px;
+	/*opacity: 0.9;*/
+}
+.register input{
+	border-radius: 3px;
+	color: #080808;
+}
+.register button{
+	border-radius: 3px;
+}
+.register select{
+	color: #222;
+}

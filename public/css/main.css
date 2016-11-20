@@ -1,0 +1,295 @@
+.body1{
+	height: 100%;
+	background: url(img/background8.jpg) no-repeat center top;
+	background-attachment: fixed;
+
+	background-position: center center;
+	width: 100%;
+    background-size: cover;
+    z-index: -2;
+    
+}
+.body{
+	/*background: #ecf0f1;*/
+	min-height:100%;
+   	position:relative;	
+	
+
+    padding-bottom: 200px;
+	
+}
+/* Lớp phủ lên ảnh nền */
+.aaa{
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: fixed;
+}
+
+.header{
+	height: 75px;
+	width: 100%;
+	color: #333;
+	/*background: #fa7921;*/
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+	/*opacity: 0.9;*/
+	border-bottom: 2px solid #fa7921;
+	line-height: 75px;
+	padding-left: 5px;
+	z-index: -1;
+	
+	/*background: linear-gradient(to top, #FA7921 0%, #330000 96%);
+	background: -moz-linear-gradient(to top, #FA7921 0%, #330000 96%);
+	background: -o-linear-gradient(to top, #FA7921 0%, #330000 96%);
+	background: -ms-linear-gradient(to top, #FA7921 0%, #330000 96%);	
+	background: -webkit-linear-gradient(bottom, #FA7921 0%, #330000 96%);*/
+
+
+    background: -moz-linear-gradient(90deg, #FA5C00 0%, #330000 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #330000), color-stop(100%, #FA5C00)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, #FA5C00 0%, #330000 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, #FA5C00 0%, #330000 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #FA5C00 0%, #330000 100%); /* ie10+ */
+    background: linear-gradient(0deg, #FA5C00 0%, #330000 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#330000', endColorstr='#FA5C00',GradientType=0 ); /* ie6-9 */
+
+}
+
+.navbar{
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+.col{
+	vertical-align: middle;
+}
+
+.menu{
+	padding-top: 15px;
+	vertical-align: middle;
+	margin-top: 0px;
+	/*line-height: 41px;*/
+	height: 45px;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+	background: #fa7921;
+	box-shadow: 0 2px 14px 0px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+/* Phân khu vực hiển thị */
+.area{
+	width: 100%;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+/*680*/
+/*768*/
+@media screen and (max-width: 768px) {
+	.container{
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.book{
+		display: inline-block;
+		height: 200px;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.area{
+		width: 100%;
+		height: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.header{
+		
+	}
+
+	.header img{
+		height: 60%;
+	}
+
+	.input-group{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container{
+		width: 80%;
+		padding: 0px;
+	}
+
+	.book{
+		display: inline-block;
+		height: 200px;
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container{
+		width: 80%;
+		padding: 0px;
+	}
+
+	.book{
+		display: inline-block;
+		height: 200px;
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container{
+		width: 80%;
+		padding: 0px;
+	}
+
+	.book{
+		display: inline-block;
+		height: 200px;
+		width: 25%;
+	}	
+}
+
+.container{
+	z-index: 0;
+	
+	/*border: 1px solid #fde74c;*/
+	/*background: none;*/
+}
+
+.main{
+	/*background: #ffffff;*/
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	color: #ffffff;
+}
+
+.container button{
+	border-radius: 0px;
+}
+
+.container input{
+	border-radius: 0px;
+}
+
+span{
+	margin-right: 5px;
+}
+
+
+
+.book{
+	vertical-align: middle;
+	text-align: center;
+}
+
+table td{
+	vertical-align: middle;
+	text-align: center;
+	
+
+}
+
+.table{
+	/*border: 1px solid #333;*/
+}
+/* Định chiều cao ảnh cho trang */
+/* Dùng cho thẻ img khi bỏ vào table */
+.photo{
+	height: 250px;
+}
+img:hover{
+	cursor: pointer;
+}
+
+
+/* Loại bỏ phân cách dòng của table bootstrap */
+.table th, .table td { 
+     border-top: none !important; 
+ }
+/* Thêm biên cho ảnh */
+.photo img{
+ 	border: 3px solid #ffffff;
+}
+
+.footer{
+	color: #ffffff;
+	width: 100%;
+	height: 200px;
+	background: #080808;
+	border-top: 2px solid #fa7921;
+	margin-top: 20px;
+	padding-top: 10px;
+
+	position: absolute;
+	bottom: 0;
+}
+
+h3{
+	font-family: 'Exo', sans-serif;
+	/*font-family: 'Exo', sans-serif;*/
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #2e2e2e;
+	font-weight: bold;
+}
+
+/*Định kích thước cho form trên navbar*/
+.input-group{
+	width: 250px;
+}
+/*Đề mục cho các phần*/
+.title{
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	background: #FA5C00;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	padding: 5px;
+	opacity: 0.8;
+}
+/*Viền trong của đề mục*/
+.title-border{
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 18px;
+	border: 1px dashed #fff;
+	line-height: 40px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url('fonts/hoadao.TTF');
+}
+
+.title-form{
+	/*font-family: 'Exo', sans-serif;*/
+	/*font-family: 'Exo', sans-serif;*/
+	font-family: myFont, sans-serif;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #fff;
+	padding-bottom: 5px;
+	/*border-bottom: 1px solid #2e2e2e;*/
+	border-bottom: 1px solid #fff;
+	font-weight: bold;
+	margin-bottom: 15px;
+}

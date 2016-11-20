@@ -1,0 +1,10 @@
+/*Anh nen cua web*/
+body{
+	background: url(img/bg.jpg) no-repeat center top;
+	background-attachment: fixed;
+	margin-top: -20px;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+    background-size: cover;
+}
